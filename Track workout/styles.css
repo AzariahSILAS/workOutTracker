@@ -1,0 +1,21 @@
+/* global styless */
+body{
+    margin: 0;
+}
+
+/* header */
+header {
+ display: flex;
+ background-color: rgb(104, 104, 113);
+ justify-content: space-around;
+ margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+nav p{
+    font-size: 32px;
+}
+/* section */

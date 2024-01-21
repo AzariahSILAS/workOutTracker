@@ -19,3 +19,17 @@ nav p{
     font-size: 32px;
 }
 /* section */
+
+
+.twoColRow{
+ display: flex;
+ justify-content: center;
+ background-color: aqua;
+ 
+}
+.firstRow{
+ padding: 50px;   
+}
+.workoutBlock{
+    background-color: rgb(210, 26, 26);
+}

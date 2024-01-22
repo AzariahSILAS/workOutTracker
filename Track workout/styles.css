@@ -43,8 +43,24 @@ nav p{
 }
 
 .workoutBlock{
-    background-color: rgb(94, 94, 94);
+    background-color: #5e5e5e;
     width: 60%;
     height: 200px;
     border-radius: 50px;
+}
+/* second col */
+.stopWatchBlock{
+    background-color: #5e5e5e;
+    width: 30%;
+    border-radius: 50px;
+}
+
+.stopWatchBlock button{
+    display: block;
+    margin: 10px auto;
+    
+}
+.stopWatchBlock p{
+    margin-left: 20px;
+    font-size: 38px;
 }

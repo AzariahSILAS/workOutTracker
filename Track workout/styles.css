@@ -24,7 +24,7 @@ nav p{
 .twoColRow{
  display: flex;
  justify-content: space-around;
-
+ margin-top: 10px;
  padding: 0 10px;
 }
 
@@ -34,12 +34,11 @@ nav p{
 
 .firstRow{
  background-color: aqua; 
- padding: 100px;  
+ padding: 50px;  
  justify-content: space-around;
- width: 60vw;
+ width: 70vw;
  height: 70%;
- margin-top: 20%;
- margin: auto;
+ margin: 100px auto;
 }
 
 .workoutBlock{
@@ -47,6 +46,7 @@ nav p{
     width: 60%;
     height: 200px;
     border-radius: 50px;
+    
 }
 /* second col */
 .stopWatchBlock{
@@ -57,10 +57,26 @@ nav p{
 
 .stopWatchBlock button{
     display: block;
-    margin: 10px auto;
+    margin: 10px auto 20px auto;
+
     
 }
 .stopWatchBlock p{
-    margin-left: 20px;
     font-size: 38px;
+    text-align: center;
+    margin: 20px;
+}
+section{
+    align-items: center;
+    background-color: bisque;
+}
+#savebtn{
+    display: block;
+    background-color: aqua;
+    margin: 0 auto;
+}
+/* --------------- */
+
+.inputFiled{
+    margin-top: 14px;
 }

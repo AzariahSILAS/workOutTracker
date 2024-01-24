@@ -29,6 +29,7 @@ nav p{
 }
 
 #addRep{
+    margin-top: 14px;
     height: 16%;
 }
 
@@ -44,7 +45,7 @@ nav p{
 .workoutBlock{
     background-color: #5e5e5e;
     width: 60%;
-    height: 200px;
+    height: 300px;
     border-radius: 50px;
     
 }

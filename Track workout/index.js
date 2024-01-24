@@ -1,6 +1,5 @@
 const workOutText = document.getElementById("wrkTtex");
-const stsizValue = document.getElementById("stsizValue");
-const addRepBtn = document.getElementById("addRep");
+
 const stopWatch = document.getElementById("stopWtc");
 const workoutValue = document.getElementById("btnP");
 const createinput = document.createElement("input");
@@ -19,12 +18,9 @@ createinput.addEventListener("dblclick", endEdit);
 //----------------------------------------------------------|
 
 //------------------functions for the inputfiled-------|
-function editWorkoutName(){
-    
+function editWorkoutName(){ 
     createinput.style.display = "block";
-       workOutText.style.display = "none"
-    
-    
+    workOutText.style.display = "none"
 }
 
 function endEdit(){
@@ -39,4 +35,47 @@ function endEdit(){
 }
 //------------------------------------------------------|
 
+//---------------------------set size block---------------------------|
+const stSizeContainer = document.getElementById("stSizeContainer");
+const stsizValue = document.getElementById("stsizValue");
+const setSizinpt = document.createElement("input");
 
+
+setSizinpt.type = "number"
+stSizeContainer.appendChild(setSizinpt)
+setSizinpt.style.display = "none"
+setSizinpt.style.marginTop = "14px"
+
+
+stsizValue.addEventListener("dblclick", editSet);
+setSizinpt.addEventListener("dblclick", saveSet);
+
+
+function editSet() {
+    stsizValue.style.display = "none";
+    setSizinpt.style.display = "block";
+}
+
+function saveSet(){
+    if(setSizinpt.value !=""){
+        stsizValue.style.display = "block";
+        setSizinpt.style.display = "none";
+        stsizValue.innerText = setSizinpt.value;
+    } else setSizinpt.value = 0;
+}
+//---------------------------------------------------------------------|
+
+//----------------------Add repetition Button--------------|
+
+const addRepBtn = document.getElementById("addRep");
+const repAmount = document.getElementById("repAmount");
+
+addRepBtn.addEventListener("click", addRepetition); 
+
+
+function addRepetition() {
+    let currentAmount = parseInt(repAmount.innerText) || 0;
+    let addAmount = parseInt(stsizValue.innerText) || 0;
+    repAmount.innerText = currentAmount + addAmount;
+}
+//-----------------------------------------------------------|

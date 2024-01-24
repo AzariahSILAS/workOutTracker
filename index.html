@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
+    <title>track work out </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <p>create</p>
+            
+            <p>list</p>
+        </nav>
+    </header>
+    <section>
+        <div class="firstRow twoColRow ">
+            <div class="workoutBlock">
+                <div class="twoColRow ">
+                    <p>Work Out:</p>
+                    <div class="btnP" id="btnP">
+                        <p id="wrkTtex">work out</p>
+                    </div>
+                </div>
+                <div class="twoColRow">
+                    <p>Set Size:</p>
+                    <div id="stSizeContainer">
+                        <p id="stsizValue">10</p>
+                    </div>
+                </div>
+                <div class="twoColRow">
+                    <p>Add repetition:</p>
+                    
+                    <button id="addRep">+</button>
+                    
+                </div>
+                <div class="twoColRow">
+                    <p>Rep amount:</p>
+                    
+                    <p id="repAmount">0</p>
+                    
+                </div>
+
+            </div>
+
+
+
+            <div class="stopWatchBlock">
+                <p id="stopWtc">00:00:00</p>
+                <button  id="startBtn" onclick="startWatch()">Start</button>
+                <button id="stopBtn" onclick="watchStop()">stop</button>
+                <button id="resetBtn" onclick="watchReset()">reset</button>
+            </div>
+
+
+        </div>
+        <button id="savebtn">Save</button>
+    </section>
+    
+</body>
+</html>

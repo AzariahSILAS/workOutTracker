@@ -1,12 +1,16 @@
 /* global styless */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body{
     margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 /* header */
 header {
  display: flex;
- background-color: rgb(104, 104, 113);
+ background-color: #5e5e5e;
  justify-content: space-around;
  margin-bottom: 50;
 }
@@ -34,12 +38,13 @@ nav p{
 }
 
 .firstRow{
- background-color: aqua; 
+ /* background-color: aqua;  */
  padding: 50px;  
  justify-content: space-around;
  width: 70vw;
+ min-width: 560px;
  height: 70%;
- margin: 100px auto;
+ margin: 100px auto 50px auto;
 }
 
 .workoutBlock{
@@ -69,12 +74,18 @@ nav p{
 }
 section{
     align-items: center;
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 #savebtn{
     display: block;
-    background-color: aqua;
-    margin: 0 auto;
+    background-color: #5e5e5e;
+    border-color: #5e5e5e;
+    font-size: 30px;
+    width: 120px;
+    height: 60px;
+    margin: 0 auto 50px auto;
+    border-radius: 10px;
+    box-shadow: none;
 }
 /* --------------- */
 

@@ -1,0 +1,16 @@
+.workoutBlock{
+    padding: 20px;
+}
+.submitedWorkOut{
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: larger;
+
+}
+#dateSpan{
+    margin-right: 20px;
+    font-size: 25px;
+}
